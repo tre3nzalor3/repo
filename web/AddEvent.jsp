@@ -23,7 +23,8 @@
     <label for="exampleInputTitle">Tytuł:</label>
     <input type="text" class="form-control" name="Tytul" >
   
-        
+    <label for="exampleInputTitle">Data:</label>
+    <input type="text" class="form-control" name="Data" >    
             
             
   <label for="comment">Opis:</label>

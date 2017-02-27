@@ -25,9 +25,10 @@ public class AddEventsFurther extends HttpServlet {
 		
 		EventsDao event = new EventsDao();
 		String tytul = request.getParameter("Tytul");
+                String data = request.getParameter("Data");
 		String opis = request.getParameter("Opis");
 		
-		event.createEvents(tytul,opis);
+		event.createEvents(tytul,data,opis);
 		session.setAttribute("content", "DodanoNewsa.jsp");
 		response.sendRedirect("AdminIndex.jsp");
 		

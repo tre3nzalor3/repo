@@ -17,7 +17,8 @@
         
         
          Tytuł wydarzenia:    <h3>${sessionScope.EventName}</h3>
-         Opis:    <h4>${sessionScope.EventDescription}</h4>
+         Data:    <h4>${sessionScope.EventDescription}</h4>
+         Opis:    <h4>${sessionScope.EventData}</h4>
             
             
             

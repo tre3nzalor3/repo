@@ -30,6 +30,7 @@ public class EditEventPage extends HttpServlet {
 			String id = request.getParameter("value");
 			Events events = EventsDAO.getEventsById(id);
 			HttpSession session = request.getSession();
+                        session.setAttribute("EventData", events.getData());
                         session.setAttribute("EventDescription", events.getOpis());
                         session.setAttribute("EventName", events.getTytul());
 			session.setAttribute("EventID", events.getId());

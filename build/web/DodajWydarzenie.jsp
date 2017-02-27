@@ -36,7 +36,9 @@
 	for (Events Eventss : event) {
 		%>
                 <a href="EditEventPage?value=<%=Eventss.getId()%>" name="eventid"> 
+                   
 		<%=Eventss.getTytul()%> 
+                
                 </a>
                 <br>
                 
