@@ -46,7 +46,8 @@
         <li><a href="NewsPage">Aktualności</a></li>
         <li><a href="EventPage">Wydarzenia</a></li>
         <li><a href="GamesPage">Baza gier</a></li>
-        <li><a href="WymianaPage">Wymiana gier</a></li>
+        <li><a href="WymianaPage">Moje gry</a></li>
+        <li><a href="WymianaPageFurther">Wymiana gier</a></li>
         <li><a href="KontaktPage">Kontakt</a></li>
       </ul> 
         
@@ -57,9 +58,7 @@
     </div>
   </div>
 </nav>  
-      <form action="WymianaPage" method="POST">
-        <input type="submit" value="wymiana" />
-    </form>
+     
     
     Uzytkownika indeks: ${sessionScope.id}
     <!-- to tylko po to jak bootstrap nie dzialal = wtedy zmiana z doPost na doGet w /servlets

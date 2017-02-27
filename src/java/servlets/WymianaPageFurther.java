@@ -17,14 +17,14 @@ import javax.servlet.http.HttpSession;
  *
  * @author sienki
  */
-@WebServlet(description = "go to wymiana page", urlPatterns = { "/WymianaPage" })
-public class WymianaPage extends HttpServlet {
+@WebServlet(description = "go to wymiana page", urlPatterns = { "/WymianaPageFurther" })
+public class WymianaPageFurther extends HttpServlet {
     
     private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.setAttribute("content", "WymianaPage.jsp");
+		session.setAttribute("content", "WymianaPageFurther.jsp");
 		response.sendRedirect("AdminIndex.jsp");
 		
 	} 

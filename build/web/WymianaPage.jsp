@@ -58,29 +58,6 @@
 	}           
         
 	%>
-	<br>
-        <br>
-        <br>
-        -------------------
-        <br>
-        <%
-	GamesDao games3Dao = new GamesDao();
-	List<Games> game = games3Dao.getGamesByUser2();
-	
-	for (Games games3 : game) {
-		%>
-                <%=games3.getId()%>"  
-		<%=games3.getTytul()%>"
-                <%=games3.getOpis()%>"
-                </a>
-                <br>
-      
-                <br>
-                <br>
-	<%
-	}
-	%>
-        
         
         </div>
         </div>
