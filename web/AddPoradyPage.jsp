@@ -12,21 +12,21 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
-        
+
+
         <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-      
-            
-        <form action="AddNewPorady" method="POST">
-         Nazwa:<input type="text" name="name" value="" /><BR>     
-         Opis:<textarea rows="10" cols="39" name="opis"></textarea><BR> 
-         <input type="submit" value="Dodaj" />
-        </form>
-            
+            <div class="col-md-6 col-md-offset-3">
+
+
+                <form action="AddNewPorady" method="POST">
+                    Nazwa:<input type="text" name="name" value="" class='form-control'/><BR>     
+                    Opis:<textarea rows="10" cols="39" name="opis" class='form-control'></textarea><BR> 
+                    <input type="submit" value="Dodaj" class="btn btn-primary" />
+                </form>
+
+            </div>
         </div>
-        </div>
-        
-        
+
+
     </body>
 </html>

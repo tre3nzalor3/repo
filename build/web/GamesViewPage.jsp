@@ -15,34 +15,34 @@
         <title>JSP Page</title>
     </head>
     <body>
-       
-        <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            
-            <h1> Wszystkie gry: </h1>
-            
-            <form action="ManageGames" method="POST">
-          
-       Gra: <select name="GamesId">
-        	<%
-          GamesDao gamesDao = new GamesDao();
-        List<Games> games = gamesDao.getGamesList();
 
-        for (Games game: games) {
-	 %>
-	 <option value="<%=game.getId()%>"><%=game.getTytul()%></option>
-        <%
-        }
-        %>
-	</select> <BR>
- 		<br>
-         <input type="submit" value="Wybierz" />
-        </form>
-        
-        
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <h1> Wszystkie gry: </h1>
+
+                <form action="ManageGames" method="POST">
+
+                    Gra: <select name="GamesId">
+                        <%
+                            GamesDao gamesDao = new GamesDao();
+                            List<Games> games = gamesDao.getGamesList();
+
+                            for (Games game : games) {
+                        %>
+                        <option value="<%=game.getId()%>"><%=game.getTytul()%></option>
+                        <%
+                            }
+                        %>
+                    </select> <BR>
+                    <br>
+                    <input type="submit" value="Wybierz" class="btn btn-primary" />
+                </form>
+
+
+            </div>
         </div>
-        </div>
-        
-        
+
+
     </body>
 </html>
